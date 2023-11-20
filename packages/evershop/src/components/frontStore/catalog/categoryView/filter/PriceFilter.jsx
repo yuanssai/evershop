@@ -130,7 +130,7 @@ export function PriceFilter({
   }).format(to);
 
   return (
-    <div className="price-filter">
+    <div className="price-filter" style={{ display: 'none' }}>
       <div className="filter-item-title">Price</div>
       <div className="rangeslider">
         <input
