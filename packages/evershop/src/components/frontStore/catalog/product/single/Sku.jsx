@@ -3,7 +3,7 @@ import React from 'react';
 
 export function Sku({ sku }) {
   return (
-    <div className="product-single-sku text-textSubdued">
+    <div className="product-single-sku text-textSubdued" style={{ display: 'none' }}>
       <span>Sku</span>
       <span>: </span>
       {sku}

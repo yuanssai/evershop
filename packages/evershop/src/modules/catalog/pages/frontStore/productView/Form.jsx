@@ -164,6 +164,7 @@ export default function ProductForm({ product, action }) {
   return (
     <Form
       id="productForm"
+      style={{ display: 'none' }}
       action={action}
       method="POST"
       submitBtn={false}

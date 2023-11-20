@@ -3,7 +3,7 @@ import React from 'react';
 
 export function Price({ regular, special }) {
   return (
-    <h4 className="product-single-price">
+    <h4 className="product-single-price" style={{ display: 'none' }}>
       {special.value === regular.value && (
         <div>
           <span className="sale-price">{regular.text}</span>
