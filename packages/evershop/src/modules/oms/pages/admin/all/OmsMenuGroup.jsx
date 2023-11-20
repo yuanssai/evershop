@@ -8,6 +8,7 @@ export default function OmsMenuGroup({ orderGrid }) {
     <NavigationItemGroup
       id="omsMenuGroup"
       name="Sale"
+      style={{ display: 'none' }}
       items={[
         {
           Icon,

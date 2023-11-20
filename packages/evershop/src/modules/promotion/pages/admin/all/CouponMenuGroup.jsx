@@ -8,6 +8,7 @@ export default function CatalogMenuGroup({ couponGrid }) {
     <NavigationItemGroup
       id="couponMenuGroup"
       name="Promotion"
+      style={{ display: 'none' }}
       items={[
         {
           Icon,

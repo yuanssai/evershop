@@ -8,6 +8,7 @@ export default function CmsMenuGroup({ cmsPageGrid }) {
     <NavigationItemGroup
       id="cmsMenuGroup"
       name="CMS"
+      style={{ display: 'none' }}
       items={[
         {
           Icon,

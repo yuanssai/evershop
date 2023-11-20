@@ -210,6 +210,7 @@ export default function ProductGrid({
                       <FromToColumnHeader
                         id="price"
                         title="Price"
+                        style={{ display: 'none' }}
                         currentFilters={currentFilters}
                       />
                     )
@@ -221,6 +222,7 @@ export default function ProductGrid({
                     default: () => (
                       <BasicColumnHeader
                         title="SKU"
+                        style={{ display: 'none' }}
                         id="sku"
                         currentFilters={currentFilters}
                       />
@@ -234,6 +236,7 @@ export default function ProductGrid({
                       <FromToColumnHeader
                         title="Qty"
                         id="qty"
+                        style={{ display: 'none' }}
                         currentFilters={currentFilters}
                       />
                     )

@@ -7,6 +7,7 @@ export default function CmsMenuGroup({ storeSetting }) {
   return (
     <NavigationItemGroup
       id="settingMenuGroup"
+      style={{ display: 'none' }}
       name="Setting"
       // eslint-disable-next-line react/no-unstable-nested-components
       Icon={() => <CogIcon width={15} height={15} />}
