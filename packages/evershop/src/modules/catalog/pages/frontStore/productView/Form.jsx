@@ -14,7 +14,7 @@ import { _ } from '@evershop/evershop/src/lib/locale/translate';
 
 function ToastMessage({ thumbnail, name, qty, count, cartUrl, toastId }) {
   return (
-    <div className="toast-mini-cart">
+    <div className="toast-mini-cart" style={{ display: 'none' }}>
       <div className="top-head grid grid-cols-2">
         <div className="self-center">{_('JUST ADDED TO YOUR CART')}</div>
         <div className="self-center close flex justify-end">
@@ -81,7 +81,7 @@ ToastMessage.propTypes = {
 
 function AddToCart({ stockAvaibility, loading = false, error }) {
   return (
-    <div className="add-to-cart mt-2">
+    <div className="add-to-cart mt-2" style={{ display: 'none' }}>
       <div style={{ width: '8rem' }}>
         <Field
           type="text"
@@ -177,6 +177,7 @@ export default function ProductForm({ product, action }) {
       <input type="hidden" name="sku" value={product.sku} />
       <Area
         id="productSinglePageForm"
+        style={{ display: 'none' }}
         coreComponents={[
           {
             component: { default: AddToCart },
