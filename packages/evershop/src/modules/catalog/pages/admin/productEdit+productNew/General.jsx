@@ -9,22 +9,22 @@ import CategoryTree from '@components/admin/catalog/productEdit/category/Categor
 function SKUPriceWeight({ sku, price, weight, setting }) {
   return (
     <div className="grid grid-cols-3 gap-1 mt-15">
-      <div>
+      <div style={{ display: 'none' }}>
         <Field
           id="sku"
           name="sku"
-          value={sku}
+          value="0"
           placeholder="SKU"
           label="SKU"
           type="text"
           validationRules={['notEmpty']}
         />
       </div>
-      <div>
+      <div style={{ display: 'none' }}>
         <Field
           id="price"
           name="price"
-          value={price?.value}
+          value="0"
           placeholder="Price"
           label="Price"
           type="text"
@@ -32,11 +32,11 @@ function SKUPriceWeight({ sku, price, weight, setting }) {
           suffix={setting.storeCurrency}
         />
       </div>
-      <div>
+      <div style={{ display: 'none' }}>
         <Field
           id="weight"
           name="weight"
-          value={weight?.value}
+          value="0"
           placeholder="Weight"
           label="Weight"
           type="text"
