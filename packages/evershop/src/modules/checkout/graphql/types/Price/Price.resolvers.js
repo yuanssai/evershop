@@ -10,7 +10,7 @@ module.exports = {
     text: async (rawPrice, { currency }) => {
       const price = parseFloat(rawPrice); // TODO: Format for decimal value?
       const curr = currency || getConfig('shop.currency', 'USD');
-      const language = getConfig('shop.language', 'zh');
+      const language = getConfig('shop.language', 'en');
       return new Intl.NumberFormat(language, {
         style: 'currency',
         currency: curr
