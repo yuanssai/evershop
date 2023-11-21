@@ -12,12 +12,13 @@ export default function MainBanner() {
       <div className="container grid grid-cols-1 md:grid-cols-2 gap-2">
         <div />
         <div className="text-center md:text-left px-2 ">
-          <h2 className="h1 ">{text}</h2>
-          <p>
+          <h2 className="h1 ">高质量板材制造</h2>
+          <h2 className="h1 ">满足各行业需求</h2>
+          {/* <p>
             Use coupon code
             <span className="font-bold">DISCOUNT20</span>
-          </p>
-          <p>{_('Use coupon ${coupon}', { coupon: 'DISCOUNT20' })}</p>
+          </p> */}
+          {/* <p>{_('Use coupon ${coupon}', { coupon: 'DISCOUNT20' })}</p> */}
           <p />
         </div>
       </div>
