@@ -7,7 +7,7 @@ export default function FeaturedCategories() {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-2 page-width">
         <div>
           <div className="text-center">
-            <img src="/assets/homepage/banner/DM-1010.jpg" alt="" />
+            <img src="/assets/homepage/banner/screenshot-20231121-230019.png" alt="" />
           </div>
           <h3 className="h4 uppercase mt-1 mb-1">灰色系的木板板材</h3>
           <div className="mb-1">
@@ -19,7 +19,7 @@ export default function FeaturedCategories() {
         </div>
         <div>
           <div>
-            <img src="/assets/homepage/banner/DM-1011-1.jpg" alt="" />
+            <img src="/assets/homepage/banner/screenshot-20231121-225941.png" alt="" />
           </div>
           <h3 className="h4 uppercase mt-1 mb-1">深色系的木板板材</h3>
           <div className="mb-1">
@@ -31,7 +31,7 @@ export default function FeaturedCategories() {
         </div>
         <div>
           <div>
-            <img src="/assets/homepage/banner/DM-1011-2.jpg" alt="" />
+            <img src="/assets/homepage/banner/screenshot-20231121-230019.png" alt="" />
           </div>
           <h3 className="h4 uppercase mt-1 mb-1">自然色系的木板板材</h3>
           <div className="mb-1">
