@@ -11,28 +11,29 @@ export default function VariantGroup({
   productImageUploadUrl
 }) {
   const [group, setGroup] = React.useState(product?.variantGroup || null);
-  return (
-    <Card title="Variant">
-      {!group && (
-        <New
-          createVariantGroupApi={createVariantGroupApi}
-          setGroup={setGroup}
-        />
-      )}
-      {group && (
-        <Variants
-          productId={product.productId}
-          productUuid={product.uuid}
-          variantGroup={group}
-          variantAttributes={group.attributes}
-          variantProducts={group.items || []}
-          addVariantItemApi={group.addItemApi}
-          createProductApi={createProductApi}
-          productImageUploadUrl={productImageUploadUrl}
-        />
-      )}
-    </Card>
-  );
+  return null;
+  // return (
+  //   <Card title="Variant">
+  //     {!group && (
+  //       <New
+  //         createVariantGroupApi={createVariantGroupApi}
+  //         setGroup={setGroup}
+  //       />
+  //     )}
+  //     {group && (
+  //       <Variants
+  //         productId={product.productId}
+  //         productUuid={product.uuid}
+  //         variantGroup={group}
+  //         variantAttributes={group.attributes}
+  //         variantProducts={group.items || []}
+  //         addVariantItemApi={group.addItemApi}
+  //         createProductApi={createProductApi}
+  //         productImageUploadUrl={productImageUploadUrl}
+  //       />
+  //     )}
+  //   </Card>
+  // );
 }
 
 VariantGroup.propTypes = {
