@@ -13,7 +13,7 @@ module.exports = {
         return null;
       }
       const timeZone = getConfig('shop.timezone', 'UTC');
-      const language = getConfig('shop.language', 'en');
+      const language = getConfig('shop.language', 'zh');
       const date = DateTime.fromJSDate(value, { zone: timeZone })
         .setLocale(language)
         .setZone(timeZone)

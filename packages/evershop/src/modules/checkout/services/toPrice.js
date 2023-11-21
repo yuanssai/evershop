@@ -29,7 +29,7 @@ exports.toPrice = function toPrice(value, forDisplay = false) {
     return price;
   } else {
     const currency = getConfig('shop.currency', 'USD');
-    const language = getConfig('shop.language', 'en');
+    const language = getConfig('shop.language', 'zh');
     return new Intl.NumberFormat(language, {
       style: 'currency',
       currency

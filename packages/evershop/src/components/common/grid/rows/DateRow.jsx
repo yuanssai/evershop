@@ -14,7 +14,7 @@ export default function DateRow({ id, areaProps }) {
         <span>
           {date.isValid
             ? date
-                .setLocale(get(context, 'shop.language', 'en'))
+                .setLocale(get(context, 'shop.language', 'zh'))
                 .setZone(get(context, 'shop.timezone', 'UTC'))
                 .toFormat('LLL dd yyyy')
             : '--'}
