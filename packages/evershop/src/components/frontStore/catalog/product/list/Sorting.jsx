@@ -61,7 +61,7 @@ export default function Sorting() {
     <div className="product-sorting mb-1">
       <div className="product-sorting-inner flex justify-end items-center space-x-05">
         <div>
-          <span>{_('Sort By')}:</span>
+          <span>{_('排序')}：</span>
         </div>
         <div style={{ width: '160px' }}>
           <Select
@@ -72,7 +72,7 @@ export default function Sorting() {
             value={sortBy}
             options={options.map((o) => ({ value: o.code, text: o.name }))}
             disableDefaultOption={false}
-            placeholder={_('Default')}
+            placeholder={_('默认')}
           />
         </div>
         <div className="sort-direction self-center">

@@ -71,7 +71,7 @@ export default function Filter({
         }`}
       >
         <div className="filter-heading">
-          <span className="font-bold ">{_('SHOP BY')}</span>
+          <span className="font-bold ">{_('条件筛选')}</span>
         </div>
         <Area
           id="productFilter"

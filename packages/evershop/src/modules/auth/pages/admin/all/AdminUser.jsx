@@ -51,7 +51,7 @@ export default function AdminUser({ adminUser, logoutUrl, loginPage }) {
                       logout();
                     }}
                   >
-                    Logout
+                    退出登录
                   </a>
                 </div>
               </div>

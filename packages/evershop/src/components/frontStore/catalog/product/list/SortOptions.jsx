@@ -1,5 +1,5 @@
 const options = [
-  { code: 'name', name: 'Name' }
+  { code: 'name', name: '产品名称' }
 ];
 
 export default options;

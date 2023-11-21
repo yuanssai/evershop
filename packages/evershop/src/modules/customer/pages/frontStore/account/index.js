@@ -13,8 +13,8 @@ module.exports = (request, response, delegate, next) => {
     response.redirect(buildUrl('login'));
   } else {
     setContextValue(request, 'pageInfo', {
-      title: translate('Account details'),
-      description: translate('Account details')
+      title: translate('账号详情'),
+      description: translate('账号详情')
     });
     next();
   }

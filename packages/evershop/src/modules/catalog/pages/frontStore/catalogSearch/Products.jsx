@@ -8,7 +8,7 @@ export default function Products({ products: { items } }) {
     <div>
       <ProductList products={items} countPerRow={4} />
       <span className="product-count italic block mt-2">
-        {_('${count} products', { count: items.length })}
+        {_('总共 ${count} 个产品', { count: items.length })}
       </span>
     </div>
   );

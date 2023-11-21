@@ -33,7 +33,7 @@ module.exports = {
       if (!rewriteRule) {
         return [
           {
-            title: translate('Home'),
+            title: translate('首页'),
             url: '/'
           },
           {
@@ -49,7 +49,7 @@ module.exports = {
         // Build the breadrumbs
         const breadcrumbs = [
           {
-            title: translate('Home'),
+            title: translate('首页'),
             url: '/'
           }
         ];
