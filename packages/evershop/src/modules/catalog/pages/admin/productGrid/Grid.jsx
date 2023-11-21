@@ -204,45 +204,45 @@ export default function ProductGrid({
                   },
                   sortOrder: 10
                 },
-                {
-                  component: {
-                    default: () => (
-                      <FromToColumnHeader
-                        id="price"
-                        title="Price"
-                        style={{ display: 'none' }}
-                        currentFilters={currentFilters}
-                      />
-                    )
-                  },
-                  sortOrder: 15
-                },
-                {
-                  component: {
-                    default: () => (
-                      <BasicColumnHeader
-                        title="SKU"
-                        style={{ display: 'none' }}
-                        id="sku"
-                        currentFilters={currentFilters}
-                      />
-                    )
-                  },
-                  sortOrder: 20
-                },
-                {
-                  component: {
-                    default: () => (
-                      <FromToColumnHeader
-                        title="Qty"
-                        id="qty"
-                        style={{ display: 'none' }}
-                        currentFilters={currentFilters}
-                      />
-                    )
-                  },
-                  sortOrder: 25
-                },
+                // {
+                //   component: {
+                //     default: () => (
+                //       <FromToColumnHeader
+                //         id="price"
+                //         title="Price"
+                //         style={{ display: 'none' }}
+                //         currentFilters={currentFilters}
+                //       />
+                //     )
+                //   },
+                //   sortOrder: 15
+                // },
+                // {
+                //   component: {
+                //     default: () => (
+                //       <BasicColumnHeader
+                //         title="SKU"
+                //         style={{ display: 'none' }}
+                //         id="sku"
+                //         currentFilters={currentFilters}
+                //       />
+                //     )
+                //   },
+                //   sortOrder: 20
+                // },
+                // {
+                //   component: {
+                //     default: () => (
+                //       <FromToColumnHeader
+                //         title="Qty"
+                //         id="qty"
+                //         style={{ display: 'none' }}
+                //         currentFilters={currentFilters}
+                //       />
+                //     )
+                //   },
+                //   sortOrder: 25
+                // },
                 {
                   component: {
                     default: () => (
@@ -312,30 +312,30 @@ export default function ProductGrid({
                     },
                     sortOrder: 10
                   },
-                  {
-                    component: {
-                      default: ({ areaProps }) => (
-                        <ProductPriceRow areaProps={areaProps} />
-                      )
-                    },
-                    sortOrder: 15
-                  },
-                  {
-                    // eslint-disable-next-line react/no-unstable-nested-components
-                    component: {
-                      default: ({ areaProps }) => (
-                        <BasicRow id="sku" areaProps={areaProps} />
-                      )
-                    },
-                    sortOrder: 20
-                  },
-                  {
-                    // eslint-disable-next-line react/no-unstable-nested-components
-                    component: {
-                      default: () => <QtyRow qty={p.inventory?.qty} />
-                    },
-                    sortOrder: 25
-                  },
+                  // {
+                  //   component: {
+                  //     default: ({ areaProps }) => (
+                  //       <ProductPriceRow areaProps={areaProps} />
+                  //     )
+                  //   },
+                  //   sortOrder: 15
+                  // },
+                  // {
+                  //   // eslint-disable-next-line react/no-unstable-nested-components
+                  //   component: {
+                  //     default: ({ areaProps }) => (
+                  //       <BasicRow id="sku" areaProps={areaProps} />
+                  //     )
+                  //   },
+                  //   sortOrder: 20
+                  // },
+                  // {
+                  //   // eslint-disable-next-line react/no-unstable-nested-components
+                  //   component: {
+                  //     default: () => <QtyRow qty={p.inventory?.qty} />
+                  //   },
+                  //   sortOrder: 25
+                  // },
                   {
                     // eslint-disable-next-line react/no-unstable-nested-components
                     component: {

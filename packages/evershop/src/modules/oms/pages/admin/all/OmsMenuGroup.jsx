@@ -4,20 +4,21 @@ import Icon from '@heroicons/react/solid/esm/CubeIcon';
 import NavigationItemGroup from '@components/admin/cms/NavigationItemGroup';
 
 export default function OmsMenuGroup({ orderGrid }) {
-  return (
-    <NavigationItemGroup
-      id="omsMenuGroup"
-      name="Sale"
-      style={{ display: 'none' }}
-      items={[
-        {
-          Icon,
-          url: orderGrid,
-          title: 'Orders'
-        }
-      ]}
-    />
-  );
+  // return (
+  //   <NavigationItemGroup
+  //     id="omsMenuGroup"
+  //     name="Sale"
+  //     style={{ display: 'none' }}
+  //     items={[
+  //       {
+  //         Icon,
+  //         url: orderGrid,
+  //         title: 'Orders'
+  //       }
+  //     ]}
+  //   />
+  // );
+  return null;
 }
 
 OmsMenuGroup.propTypes = {

@@ -4,20 +4,21 @@ import Icon from '@heroicons/react/solid/esm/DocumentIcon';
 import NavigationItemGroup from '@components/admin/cms/NavigationItemGroup';
 
 export default function CmsMenuGroup({ cmsPageGrid }) {
-  return (
-    <NavigationItemGroup
-      id="cmsMenuGroup"
-      name="CMS"
-      style={{ display: 'none' }}
-      items={[
-        {
-          Icon,
-          url: cmsPageGrid,
-          title: 'Pages'
-        }
-      ]}
-    />
-  );
+  // return (
+  //   <NavigationItemGroup
+  //     id="cmsMenuGroup"
+  //     name="CMS"
+  //     style={{ display: 'none' }}
+  //     items={[
+  //       {
+  //         Icon,
+  //         url: cmsPageGrid,
+  //         title: 'Pages'
+  //       }
+  //     ]}
+  //   />
+  // );
+  return null;
 }
 
 CmsMenuGroup.propTypes = {

@@ -7,13 +7,14 @@ import CkeditorField from '@components/common/form/fields/Ckeditor';
 import CategoryTree from '@components/admin/catalog/productEdit/category/CategoryTree';
 
 function SKUPriceWeight({ sku, price, weight, setting }) {
+  const skuRef = React.useRef(sku || Date.now().toString());
   return (
     <div className="grid grid-cols-3 gap-1 mt-15">
       <div style={{ display: 'none' }}>
         <Field
           id="sku"
           name="sku"
-          value="0"
+          value={skuRef.current}
           placeholder="SKU"
           label="SKU"
           type="text"
@@ -24,7 +25,7 @@ function SKUPriceWeight({ sku, price, weight, setting }) {
         <Field
           id="price"
           name="price"
-          value="0"
+          value={price}
           placeholder="Price"
           label="Price"
           type="text"
@@ -36,7 +37,7 @@ function SKUPriceWeight({ sku, price, weight, setting }) {
         <Field
           id="weight"
           name="weight"
-          value="0"
+          value={weight}
           placeholder="Weight"
           label="Weight"
           type="text"
@@ -59,9 +60,9 @@ SKUPriceWeight.propTypes = {
 };
 
 SKUPriceWeight.defaultProps = {
-  price: undefined,
-  sku: undefined,
-  weight: undefined
+  price: 0,
+  sku: Date.now().toString(),
+  weight: 0
 };
 
 function Category({ product }) {
@@ -215,21 +216,21 @@ export default function General({
               sortOrder: 22,
               id: 'category'
             },
-            {
-              component: { default: Field },
-              props: {
-                id: 'tax_class',
-                name: 'tax_class',
-                value: product?.taxClass || null,
-                type: 'select',
-                label: 'Tax class',
-                options: [...taxClasses],
-                placeholder: 'None',
-                disableDefaultOption: false
-              },
-              sortOrder: 25,
-              id: 'tax_class'
-            },
+            // {
+            //   component: { default: Field },
+            //   props: {
+            //     id: 'tax_class',
+            //     name: 'tax_class',
+            //     value: product?.taxClass || null,
+            //     type: 'select',
+            //     label: 'Tax class',
+            //     options: [...taxClasses],
+            //     placeholder: 'None',
+            //     disableDefaultOption: false
+            //   },
+            //   sortOrder: 25,
+            //   id: 'tax_class'
+            // },
             {
               component: { default: CkeditorField },
               props: {
