@@ -17,7 +17,7 @@ export default function FeaturedCategories() {
               + antimicrobial linings, and more.
             </p>
           </div>
-          <Button url="/kids" title="Shop kids" variant="primary" />
+          <Button url="/special-colors" title="特殊色系" variant="primary" />
         </div>
         <div>
           <div>
@@ -31,7 +31,7 @@ export default function FeaturedCategories() {
               + antimicrobial linings, and more.
             </p>
           </div>
-          <Button url="/women" title="Shop women" variant="primary" />
+          <Button url="/coloring-system" title="染色系" variant="primary" />
         </div>
         <div>
           <div>
@@ -45,7 +45,7 @@ export default function FeaturedCategories() {
               + antimicrobial linings, and more.
             </p>
           </div>
-          <Button url="/men" title="Shop men" variant="primary" />
+          <Button url="/natural-color-scheme" title="自然色系" variant="primary" />
         </div>
       </div>
     </div>
