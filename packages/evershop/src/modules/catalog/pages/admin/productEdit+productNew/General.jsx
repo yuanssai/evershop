@@ -25,7 +25,7 @@ function SKUPriceWeight({ sku, price, weight, setting }) {
         <Field
           id="price"
           name="price"
-          value={price}
+          value="0"
           placeholder="Price"
           label="Price"
           type="text"
@@ -37,7 +37,7 @@ function SKUPriceWeight({ sku, price, weight, setting }) {
         <Field
           id="weight"
           name="weight"
-          value={weight}
+          value="0"
           placeholder="Weight"
           label="Weight"
           type="text"
