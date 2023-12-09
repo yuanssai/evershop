@@ -17,7 +17,7 @@ services:
     ports:
       - 3000:3000
   
-  #The postgres database: 
+  # The postgres database: 
   database:
     image: postgres:16
     restart: unless-stopped
@@ -29,6 +29,16 @@ services:
       POSTGRES_DB: postgres
     ports:
       - "5432:5432"
+    networks:
+      - myevershop
+
+  # The Nginx service:
+  nginx:
+    image: registry.cn-hangzhou.aliyuncs.com/yuansai/nginx:v1
+    restart: always
+    ports:
+      - 80:80
+      - 443:443
     networks:
       - myevershop
 
