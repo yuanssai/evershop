@@ -2,12 +2,12 @@ version: '3.8'
 
 services:
   app:
-    image: ghcr.io/motiong-io/evershop:v3
+    image: registry.cn-hangzhou.aliyuncs.com/yuansai/guisheng:v1
     restart: always
     environment:
       DB_HOST: database
       DB_PORT: 5432
-      DB_PASSWORD: postgres
+      DB_PASSWORD: p93la3LpWL5G
       DB_USER: postgres
       DB_NAME: postgres
     networks:
@@ -24,7 +24,7 @@ services:
     volumes:
       - postgres-data:/var/lib/postgresql/data
     environment:
-      POSTGRES_PASSWORD: postgres
+      POSTGRES_PASSWORD: p93la3LpWL5G
       POSTGRES_USER: postgres
       POSTGRES_DB: postgres
     ports:
