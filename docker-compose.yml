@@ -34,7 +34,6 @@ services:
 
 networks:
   myevershop:
-    name: MyEverShop
     driver: bridge
 
 volumes:
